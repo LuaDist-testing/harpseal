@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "harpseal"
-version = "1.0.1-0"
+version = "1.0.2-1"
 -- LuaDist source
 source = {
-  tag = "1.0.1-0",
+  tag = "1.0.2-1",
   url = "git://github.com/LuaDist-testing/harpseal.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/aimingoo/harpseal/archive/v1.0.1.tar.gz",
---   dir = "harpseal-1.0.1"
+--   url = "https://github.com/aimingoo/harpseal/archive/v1.0.2.tar.gz",
+--   dir = "harpseal-1.0.2"
 -- }
 description = {
   summary = "harpseal - distribution task for lua",
@@ -18,7 +18,7 @@ description = {
     harpseal is implement of PEDT(Parallel Exchangeable Distribution Task) specifications in lua.
   ]],
   homepage = "https://github.com/aimingoo/harpseal",
-  license = "Apache-2.0 <http://opensource.org/licenses/Apache-2.0>"
+  license = "Apache-2.0"
 }
 dependencies = {
   "lua >= 5.1",
@@ -32,6 +32,7 @@ build = {
     ["harpseal.infra.taskhelper"]  = "infra/taskhelper.lua",
     ["harpseal.infra.httphelper"]  = "infra/httphelper.lua",
     ["harpseal.tools.taskloader"]  = "tools/taskloader.lua",
+    ["harpseal.dbg.register_center"]  = "infra/dbg_register_center.lua",
     ["tools.loadkit"]  = "tools/loadkit.lua",
     ["lib.Promise"]  = "lib/Promise.lua",
     ["lib.BASE64"]  = "lib/BASE64.lua",
